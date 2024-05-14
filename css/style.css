@@ -321,7 +321,7 @@ button.active {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #333333;
   background-color: #FFFFFF;
@@ -349,6 +349,12 @@ form input {
   background-color: #F9F9F9;
   font-family: 'Open Sans', sans-serif;
   color: #333333;
+}
+
+.cont_submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilos del botón */
@@ -440,4 +446,31 @@ form select {
 #observacion, #label_observacion{
   display: none;
 }
+
+.panel-scroll {
+  max-height: 157px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.opcion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F9F9F9;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  border: 2px solid #E9E9E9;
+  border-radius: 5px;
+
+}
+
+.check{
+  height: 18px;
+  margin-right: 15px;
+  transform: translateY(10px);
+}
+
+
 

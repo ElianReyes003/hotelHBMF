@@ -35,7 +35,9 @@ $resultado= $query -> fetchAll();
     ?>    
     </select>
     <input type="hidden" name="estatus" value="1">
-    <input type="submit" value="Registrar Habitación">
+    <div class="cont_submit">
+        <input type="submit" value="Registrar Habitación">
+    </div>
 </form>
 
 <script>

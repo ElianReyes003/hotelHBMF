@@ -47,7 +47,9 @@ $limpieza = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     <label>Hora de fin:</label>
     <input type="time" id="hora_fin" name="hora_fin" required>
 
-    <input type="submit" value="Registrar Mantenimiento">  
+    <div class="cont_submit">
+        <input type="submit" value="Registrar Mantenimiento">
+    </div>  
 </form>
 
 <script>

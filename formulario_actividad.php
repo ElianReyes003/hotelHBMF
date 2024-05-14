@@ -12,7 +12,9 @@
     <label for="nombre_actividad">Nombre de la Actividad:</label>
     <input id="nombre_actividad" type="text" name="nombre_actividad">
     <input type="hidden" name="estatus" value="1">
-    <input type="submit" value="Registrar Actividad">
+    <div class="cont_submit">
+        <input type="submit" value="Registrar Actividad">
+    </div>
 </form>
 
 <script>

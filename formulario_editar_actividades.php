@@ -25,7 +25,9 @@ $result = $query->fetch();
     <label for="nombre_actividad">Nombre de la Actividad:</label>
     <input value="<?=$result['nombre_actividad']?>" type="text" id="nombre_actividad" name="nombre_actividad" required>
     <input type="hidden" name="estatus" value="1">
-    <input type="submit" value="Actualizar Actividad">
+    <div class="cont_submit">
+        <input type="submit" value="Actualizar Actividad">
+    </div>
 </form>
 </body>
 </html>

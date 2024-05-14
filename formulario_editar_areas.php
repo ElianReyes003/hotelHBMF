@@ -25,7 +25,9 @@ $result = $query->fetch();
     <label for="nombre_area">Nombre de la Área:</label>
     <input value="<?=$result['nombre_area']?>" type="text" id="nombre_area" name="nombre_area" required>
     <input type="hidden" name="estatus" value="1">
-    <input type="submit" value="Actualizar Área">
+    <div class="cont_submit">
+        <input type="submit" value="Actualizar Área">
+    </div>
 </form>
 </body>
 </html>

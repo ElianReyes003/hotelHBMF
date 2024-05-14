@@ -14,7 +14,9 @@
     <label for="nombre_area">Nombre de la Área:</label>
     <input id="nombre_area" type="text" name="nombre_area">
     <input type="hidden" name="estatus" value="1">
-    <input type="submit" value="Registrar Área">
+    <div class="cont_submit">
+        <input type="submit" value="Registrar Área">
+    </div>
 </form>
 
 <script>

@@ -67,14 +67,21 @@ $empleado = $query->fetchAll();
         </select>
 
         <label>Actividades realizadas:</label>
-        <ul class="cont_elements" name="fk_actividad">
-            <?php foreach ($actividad as $opciones) : ?>
-                <li class="subcont_elements">
-                    <input name="nombre_actividad[]" type="checkbox" value="<?php echo $opciones['pk_actividad'] ?>">
-                    <label><?= $opciones['nombre_actividad'] ?></label>
-                </li>
-            <?php endforeach ?>
-        </ul>
+        <div class="panel-scroll">
+            <div class="lista-checkboxes">
+                <?php foreach ($actividad as $opciones) : ?>
+                    <div class="opcion">
+                        <div class="box-opcion">
+                            <label for="<?= $opciones['pk_actividad'] ?>"><?= $opciones['nombre_actividad'] ?></label>
+                        </div>
+                        <div class="box-opcion">
+                            <input class="check" id="<?= $opciones['pk_actividad'] ?>" name="nombre_actividad[]" type="checkbox" value="<?= $opciones['pk_actividad'] ?>">
+                        </div>
+                    </div>
+                <?php endforeach ?>
+            </div>
+        </div>
+        <br>
 
         <label>Empleado:</label>
         <select name="fk_empleado">
@@ -104,8 +111,9 @@ $empleado = $query->fetchAll();
 
         <label id="label_observacion">Observaciones para mantenimiento:</label>
         <input type="text" id="observacion" name="observacion">
-
-        <input type="submit" value="Registrar Limpieza">
+        <div class="cont_submit">
+             <input type="submit" value="Registrar Limpieza">
+        </div>
     </form>
 
     <script>

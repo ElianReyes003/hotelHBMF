@@ -57,7 +57,9 @@ $result = $query->fetch();
     <label>Hora de fin:</label>
     <input value="<?=$result['hora_fin_mant']?>" type="time" name="hora_fin">
 
-    <input type="submit" value="Actualizar Mantenimiento">  
+    <div class="cont_submit">
+        <input type="submit" value="Actualizar Mantenimiento">  
+    </div>
 </form>
 </body>
 </html>

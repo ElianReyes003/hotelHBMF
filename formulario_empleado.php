@@ -17,7 +17,9 @@
     <label for="nombre_actividad">Contacto del empleado:</label>
     <input type="text" id="contacto" name="contacto">
     <input type="hidden" name="estatus" value="1">
-    <input type="submit" value="Registrar Empleado">
+    <div class="cont_submit">
+        <input type="submit" value="Registrar Empleado">
+    </div>
 </form>
 
 <script>

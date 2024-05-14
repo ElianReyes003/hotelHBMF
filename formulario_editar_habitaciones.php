@@ -66,7 +66,9 @@ $result3 = $query->fetchAll();
     <input type="date" name="fecha_ver" required>
 
     <input type="hidden" name="estatus" value="1">
-    <input type="submit" value="Actualizar Habitación">
+    <div class="cont_submit">
+        <input type="submit" value="Actualizar Habitación">
+    </div>
 </form>
 </body>
 </html>

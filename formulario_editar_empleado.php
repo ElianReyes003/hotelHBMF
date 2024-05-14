@@ -30,7 +30,9 @@ $result = $query->fetch();
     <label for="nombre_actividad">Contacto del empleado:</label>
     <input value="<?=$result['contacto']?>" type="text" id="contacto" name="contacto" required>
     <input type="hidden" name="estatus" value="1">
-    <input type="submit" value="Actualizar Empleado">
+    <div class="cont_submit">
+      <input type="submit" value="Actualizar Empleado">
+    </div>
 </form>
 </body>
 </html>
